@@ -1,4 +1,5 @@
 import './App.css'
+import DataBinding from './DataBinding';
 import DaynamicSum from './DaynamicSum';
 import ExcelExport from './ExcelExport';
 import withBorder from './hoc';
@@ -26,6 +27,8 @@ function App() {
       <DaynamicSum />
       {/* Update the parent state */}
       <UpdateParent/>
+      {/* way data binding in ReactJS */}
+      <DataBinding/>
     </div>
   );
 }
