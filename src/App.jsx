@@ -3,7 +3,8 @@ import DaynamicSum from './DaynamicSum';
 import ExcelExport from './ExcelExport';
 import withBorder from './hoc';
 import Message from './mess';
-import PracticesAPI from './PracticesAPI';
+import UpdateParent from './UpdateParent';
+// import PracticesAPI from './PracticesAPI';
 
 function App() {
   const data = [
@@ -20,11 +21,11 @@ function App() {
       {/* What is HOC Finaction in react */}
       <EnhancedMessage darshan="Hello, HOC!" />;
       {/* Fetch data from an API */}
-      <PracticesAPI />
+      {/* <PracticesAPI /> */}
       {/* Sum of Two Numbers */}
       <DaynamicSum />
       {/* Update the parent state */}
-      
+      <UpdateParent/>
     </div>
   );
 }
