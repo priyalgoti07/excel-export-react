@@ -1,7 +1,9 @@
 import './App.css'
+import DaynamicSum from './DaynamicSum';
 import ExcelExport from './ExcelExport';
 import withBorder from './hoc';
 import Message from './mess';
+import PracticesAPI from './PracticesAPI';
 
 function App() {
   const data = [
@@ -15,9 +17,13 @@ function App() {
     <div>
       <h1>Export Data to Excel</h1>
       <ExcelExport data={data} fileName="employees" />
-
-      <EnhancedMessage darshan="Hello, HOC!" />; 
-      <EnhancedMessage darshan="second Hoc!" />;
+      {/* What is HOC Finaction in react */}
+      <EnhancedMessage darshan="Hello, HOC!" />;
+      {/* Fetch data from an API */}
+      <PracticesAPI />
+      {/* Sum of Two Numbers */}
+      <DaynamicSum />
+      {/* Update the parent state */}
     </div>
   );
 }
