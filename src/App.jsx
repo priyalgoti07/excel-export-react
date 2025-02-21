@@ -24,6 +24,7 @@ function App() {
       {/* Sum of Two Numbers */}
       <DaynamicSum />
       {/* Update the parent state */}
+      
     </div>
   );
 }
